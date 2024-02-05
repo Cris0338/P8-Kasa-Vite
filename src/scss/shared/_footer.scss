@@ -17,9 +17,8 @@
   #footer-text {
     width: 513px;
     height: 46px;
-    color: white;
-    font-size: 12px;
-
+    color: $footer;
+    font-size: 24px;
     font-weight: 500;
   }
 }
@@ -32,8 +31,7 @@
 
     #footer-text {
       width: 133.594px;
-      height: 46px;
-      color: white;
+      height: 46px;      
       word-wrap: break-word;
       font-size: 12px;
       font-weight: 500;
