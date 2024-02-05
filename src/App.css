@@ -1,8 +1,9 @@
 #root {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-top: 45px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo {
@@ -39,4 +40,53 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Temporary CSS */
+
+.footer {
+  width: 513px;
+  height: 114px;
+  padding: 66px 464px 29px 463px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 28.556px;
+  background: #000;
+}
+
+#footer-logo {
+  width: 122px;
+  height: 39.4px;
+}
+
+#footer-text {
+  width: 513px;
+  height: 46px;
+  color: #fff;
+  text-align: center;
+  font-family: ar;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 34.224px */
+}
+
+@media (max-width: 1240px) {
+  .footer {
+    width: 375px;
+    height: 209px;
+    padding: 66px 120px 58px 120px;
+
+    #footer-text {
+      width: 133.6px;
+      height: 46px;
+      color: white;
+      word-wrap: break-word;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 142.6%; /* 17.112px */
+    }
+  }
 }

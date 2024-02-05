@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+html,
+header,
+body,
+footer,
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.heart__icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 16px;
+}
+.heart__icon--empty {
+  position: absolute;
+  color: black;
+}
+.heart__icon--full {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
+  background: linear-gradient(#9356dc, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+.heart__icon:hover .heart__icon--full {
+  opacity: 1;
+}
+.heart__icon:hover .heart__icon--empty {
+  opacity: 0;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+.header {
+  width: 100%;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.header .backbtn {
+  width: 30px;
+  font-size: x-large;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  position: absolute;
+  left: 17px;
+}
+.header a {
+  padding: 0 19px 0 16px;
+  color: #101010;
+  text-decoration: none;
+  font-family: "Shrikhand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header a img {
+  height: 34px;
+}
+@media (max-width: 1079px) {
+  .header .imglogo {
+    display: none;
+  }
+}
+@media (min-width: 1080px) {
+  .header .txtlogo {
+    display: none;
+  }
+}
+
+.homepage .backbtn {
+  visibility: hidden;
+}
+
+.footer {
+  width: 513px;
+  height: 114px;
+  padding: 66px 464px 29px 463px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 28.556px;
+  background: #000;
+}
+.footer #footer-logo {
+  width: 122px;
+  height: 39.4px;
+}
+.footer #footer-text {
+  width: 513px;
+  height: 46px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 1240px) {
+  .footer {
+    width: 375px;
+    height: 209px;
+    padding: 66px 120px 58px 120px;
+  }
+  .footer #footer-text {
+    width: 133.594px;
+    height: 46px;
+    color: white;
+    word-wrap: break-word;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 142.6%; /* 17.112px */
+  }
+}/*# sourceMappingURL=style.css.map */
