@@ -1,3 +1,7 @@
+footer {
+  width: 100%;
+}
+
 .footer {
   width: 513px;
   height: 114px;
@@ -7,7 +11,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 28.556px;
-  background: #000;
+  background: $bg-secondary;
 
   #footer-logo {
     width: 122px;
@@ -17,9 +21,12 @@
   #footer-text {
     width: 513px;
     height: 46px;
-    color: $footer;
+    color: $white-txt;
+    text-align: center;
     font-size: 24px;
+    font-style: normal;
     font-weight: 500;
+    line-height: 142.6%; /* 34.224px */
   }
 }
 
@@ -31,7 +38,7 @@
 
     #footer-text {
       width: 133.594px;
-      height: 46px;      
+      height: 46px;
       word-wrap: break-word;
       font-size: 12px;
       font-weight: 500;

@@ -1,0 +1,16 @@
+.container{
+    width: 1024px;
+    height: 829px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px 60px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    justify-items: center;
+    align-items: center;
+
+    
+}

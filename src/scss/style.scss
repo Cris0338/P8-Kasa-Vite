@@ -1,10 +1,13 @@
 // style.scss
-
+@import 'shared/reset';
 @import 'shared/colors';
 @import 'shared/fonts';
-@import 'shared/reset';
 @import 'shared/shadows';
+@import 'shared/root';
+@import 'shared/header';
+@import 'shared/banner';
+@import 'shared/card';
 
-// @import 'shared/heart';
-// @import 'shared/header';
+
 @import 'shared/footer';
+// @import 'shared/stars';
