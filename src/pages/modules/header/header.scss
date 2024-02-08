@@ -7,6 +7,11 @@ header {
   width: 100%;
   text-decoration: none;
   color: $black-txt;
+
+  a {
+    text-decoration: none;
+    color: $black-txt;
+  }
 }
 .navbar {
   display: flex;
