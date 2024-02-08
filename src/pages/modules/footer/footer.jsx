@@ -6,7 +6,7 @@ import "./footer.scss";
 function Footer() {
   return (
     <>
-      <footer>
+      <footer className="footer_container">
         <div className="footer">
           <div id="footer-logo">
             <Link to="/">

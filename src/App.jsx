@@ -11,6 +11,9 @@ import Home from "./pages/Home";
 function App() {
   return (
     <Router>
+      <div className="main_container">
+      
+      
       <Header />
 
       <Routes>
@@ -18,6 +21,7 @@ function App() {
         {/* <Route path="/about" element={<Home />} /> */}
         {/* <Route path="/logement/:id" element={<Home />} /> */}
       </Routes>
+      </div>
       <Footer />
     </Router>
   );

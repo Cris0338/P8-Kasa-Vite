@@ -8,11 +8,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-<!-- Da fare -->
+<!-- Da fixare -->
 
-fix banner responsive text align
-fix banner responsive text size
-fix header responsive text size
-fix footer responsive size - text disappear
+
+
 
 

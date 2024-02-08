@@ -1,6 +1,6 @@
 // card.scss
 
-@import '../../../style.scss';
+@import "../../../style.scss";
 
 .card {
   background: $primary;
@@ -12,10 +12,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  
+
   overflow: hidden;
   position: relative;
   border-radius: 25px;
+  transition: all 1s ease-in-out;
 
   &:before {
     content: "";
@@ -47,5 +48,12 @@
     text-shadow: $text-shadow;
     z-index: 1;
     line-height: 142.6%; /* 25.668px */
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 325px;
+    height: 225px;
   }
 }
