@@ -1,18 +1,17 @@
-@charset "UTF-8";
 .container {
   width: 1240px;
   height: auto;
-  background: #000;
+  background: $bg-gallery;
+  border-radius: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  padding: 20px;
+  grid-row-gap: 50px;
+  grid-column-gap: 60px;
+  justify-content: center;
+  align-items: start;
+  padding-top: 56px;
+  padding: 50px;
+  box-sizing: border-box;
 }
 
 /* Media query per adattare la griglia a schermi più piccoli */
@@ -21,8 +20,9 @@
     grid-template-columns: repeat(2, 1fr); /* Due colonne per schermi medi */
   }
 }
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr; /* Una colonna per schermi piccoli */
   }
-}/*# sourceMappingURL=gallery.css.map */
+}

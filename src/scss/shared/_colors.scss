@@ -4,18 +4,20 @@
 
 $white-1: #ffffff;
 $black-1: #000000;
-$red-1: #FF6060;
-$grey-1: #C4C4C4;
-$grey-2: #E3E3E3;
+$red-1: #ff6060;
+$grey-1: #c4c4c4;
+$grey-2: #e3e3e3;
+$grey-3: #f6f6f6;
 
 // Color attribution
 
 $primary: $red-1;
-$black-txt : $black-1;
+$black-txt: $black-1;
 $white-txt: $white-1;
 $red-txt: $red-1;
 $bg-primary: $white-1;
 $bg-secondary: $black-1;
+$bg-gallery: $grey-3;
 $filled-star: $red-1;
 $empty-star: $grey-2;
 $host: $grey-1;
