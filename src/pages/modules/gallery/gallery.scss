@@ -1,5 +1,10 @@
+// gallery.scss
+
+@import "../../../style.scss";
+
 .container {
-  width: 1240px;
+  max-width: 1240px;
+  width: 100%;
   height: auto;
   background: $bg-gallery;
   border-radius: 25px;

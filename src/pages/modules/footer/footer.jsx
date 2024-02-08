@@ -1,6 +1,7 @@
 // footer.jsx
-
+import { Link } from "react-router-dom";
 import KasaLogoW from "/KasaW.svg";
+import "./footer.scss";
 
 function Footer() {
   return (
@@ -8,9 +9,9 @@ function Footer() {
       <footer>
         <div className="footer">
           <div id="footer-logo">
-            <a href="index.html">
+            <Link to="/">
               <img src={KasaLogoW} alt="Kasa Wite logo" />
-            </a>
+            </Link>
           </div>
           <div id="footer-text">
             <p>© 2020 Kasa. All rights reserved</p>

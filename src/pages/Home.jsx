@@ -1,15 +1,15 @@
-// Home.jsx
+// home.jsx
 
-// import Banner from './Banner';
-import Gallery from './modules/gallery';
+import Card from "./modules/gallery/gallery";
+import Banner from "./modules/banner/banner";
 
 function Home() {
-    return (
-      <>
-      {/* <Banner /> */}
-      <Gallery />
-      </>
-    );
-  }
-  
-  export default Home;
+  return (
+    <>
+      <Banner />
+      <Card />
+    </>
+  );
+}
+
+export default Home;

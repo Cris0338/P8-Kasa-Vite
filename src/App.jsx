@@ -2,28 +2,21 @@
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import "./css/style.css";
-import Header from "./pages/modules/layout/header";
-import Footer from "./pages/modules/layout/footer";
-import Card from "./pages/modules/gallery";
-import Banner from "./pages/modules/shared/banner";
 
-// import Home from "./pages/Home";
-// import About from './pages/About';
+import Header from "./pages/modules/header/header";
+import Footer from "./pages/modules/footer/footer";
+import Home from "./pages/Home";
+
 
 function App() {
-
-
   return (
     <Router>
       <Header />
-      <Banner />
-      <Card />
+
       <Routes>
-      {/* <Route path="/" element={<Home />} />  */}
-      {/* <Route path="/about" element={<About />} />  */}
-      
-      
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/about" element={<Home />} /> */}
+        {/* <Route path="/logement/:id" element={<Home />} /> */}
       </Routes>
       <Footer />
     </Router>

@@ -1,7 +1,8 @@
 //  gallery.jsx
 
-import Card from "./card";
-import data from "../../data/data.json";
+import Card from "../card/card";
+import data from "../../../data/data.json";
+import "./gallery.scss";
 
 function Gallery() {
   return (
@@ -12,5 +13,5 @@ function Gallery() {
     </div>
   );
 }
-  
-  export default Gallery;
+
+export default Gallery;

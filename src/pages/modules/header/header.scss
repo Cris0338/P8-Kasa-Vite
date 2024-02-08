@@ -1,7 +1,10 @@
 // _header.scss
 
+@import '../../../style.scss';
+
 header {
-  width: 1240px;
+  max-width: 1240px;
+  width: 100%;
   text-decoration: none;
   color: $black-txt;
 
@@ -48,7 +51,7 @@ header {
       text-align: right;
     }
 
-    .underline {
+    .active {
       text-decoration-line: underline;
     }
   }
