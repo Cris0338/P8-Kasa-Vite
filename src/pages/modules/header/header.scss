@@ -24,7 +24,6 @@ header {
 .logo {
   width: 210.322px;
   height: 68px;
-  transition: all 1s ease-in-out;
 
   img {
     width: 100%;
@@ -53,7 +52,7 @@ header {
   white-space: nowrap;
 }
 
-.menu, .accueil, .propos {
+.navbar, .logo, .menu, .accueil, .propos {
   transition: all 1s ease-in-out;
 }
 
@@ -61,7 +60,7 @@ header {
   text-decoration-line: underline;
 }
 
-@media (max-width: 770px) {
+@media (max-width: $frfrs) {
   .logo {
     min-width: 145px;
     width: 145px;
@@ -86,7 +85,7 @@ header {
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: $frs) {
   .menu {
     flex-direction: column;
     justify-content: space-between;

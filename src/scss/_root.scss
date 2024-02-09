@@ -16,10 +16,7 @@
   }
 }
 
-@media (max-width: 1156px) {
-}
-
-@media (max-width: 768px) {
+@media (max-width: $frfrroot) {
   #root {
     .main_container {
       padding: 20px;
