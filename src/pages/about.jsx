@@ -8,16 +8,14 @@ function About() {
     <>
       <div className="about">
         <div className="about_container">
-        <div className="banner"></div>
-        <div className="about_accordions"></div>
-        {data.map((item, index) => (
-          <Accordion key={index} title={item.title} content={item.content} />
-        ))}
-      </div>
+          <div className="bannerAbout"></div>
+          {data.map((item, index) => (
+            <Accordion key={index} title={item.title} content={item.content} />
+          ))}
+        </div>
       </div>
     </>
   );
 }
 
 export default About;
-
