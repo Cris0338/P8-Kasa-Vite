@@ -1,38 +1,58 @@
+// accordion.scss
+
 @import "../../../style.scss";
 
-.accordion-container { // Usa il trattino anziché l'underscore per la consistenza con le classi CSS
-  max-width: 1024px;
+.accordion-container {
+  max-width: 1023px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 
   .accordion-item {
+    overflow: hidden;
+
     .accordion-title {
-      background: $bg-primary;
-      cursor: pointer;
+      color: $white-txt;
+      background: $primary;
+      border-radius: 5px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px; // Aggiungi un po' di padding
-      // Aggiungi qui gli altri stili come margin, padding, ecc.
+      padding: 10px 20px 10px 15px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 142.6%; /* 34.224px */
     }
 
     .accordion-icon {
-      // Aggiungi gli stili per l'icona '+/-'
-      padding: 0 20px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      transform: rotate(0deg);
     }
 
     .accordion-content {
-      display: none;
-      padding: 20px;
-      background: $bg-gallery; // Fai vedere il contenuto con un background diverso
-      // Aggiungi qui gli altri stili come margin, padding, ecc.
+      max-height: 0;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+      text-align: start;
+      background: $bg-gallery;
+      border-radius: 10px 10px 5px 5px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 142.6%; /* 25.668px */
+      padding: 0 20px;
     }
 
-    &.active .accordion-content { // Assicurati che il selettore sia specifico per gli elementi attivi
-      display: block;
-      // Aggiungi una transizione se lo desideri
+    &.action .accordion-icon {
+      transform: rotate(-180deg);
+    }
+
+    &.action .accordion-content {
+      max-height: 100px;
+      padding: 20px;
+
     }
   }
 }
