@@ -1,0 +1,26 @@
+// rating.scss
+
+@import "../../../style.scss";
+
+.rating {
+    display: flex;
+  
+    .star {
+      font-size: 24px; // O la dimensione desiderata per le tue stelle
+  
+      &.full, &.half {
+        color: $filled-star; // Colore per stelle piene e mezze
+      }
+  
+      &.half::before {
+        content: '★';
+        color: $empty-star; // Colore di sfondo per la parte vuota della mezza stella, se necessario
+        position: absolute;
+      }
+  
+      &.empty {
+        color: $empty-star; // Colore per stelle vuote
+      }
+    }
+  }
+  

@@ -1,7 +1,7 @@
 // About.jsx
-import Accordion from "./modules/accordion/accordion";
+import Accordion from "./../modules/accordion/accordion";
 import "./About.scss";
-import data from "../data/about.json";
+import data from "./../../data/about.json";
 
 function About() {
   return (
