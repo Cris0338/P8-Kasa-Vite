@@ -17,8 +17,6 @@ Currently, two official plugins are available:
 
 <!-- to fix -->
 
-Spacing error in logement page, corousel --> Title
-
 
 
 

@@ -2,14 +2,11 @@
 
 import "./banner.scss";
 
-function Banner() {
+function Banner({ image, children }) {
   return (
-    <>
-      <div className="banner">
-        <h1 className="banner_text">Chez vous, partout et ailleurs</h1>
-        <h1 className="banner_text br">Chez vous, <br/>partout et ailleurs</h1>
-      </div>
-    </>
+    <div className="banner" style={{ backgroundImage: `url(${image})` }}>
+      {children}
+    </div>
   );
 }
 

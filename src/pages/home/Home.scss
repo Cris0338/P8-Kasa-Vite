@@ -1,0 +1,42 @@
+// Home.scss
+
+@import "../../style.scss";
+
+.banner_text {
+  position: absolute;
+  color: $white-txt;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: $text-shadow;
+  z-index: 1;
+}
+
+.br {
+  display: none;
+}
+
+@media (max-width: $frfrs) {
+  .banner_text {
+    font-size: 24px;
+    line-height: 100%; /* 24px */
+    text-align: center;
+  }
+
+  .br {
+    display: none;
+  }
+}
+
+@media (max-width: $frbanner) {
+  .banner_text {
+    display: none;
+  }
+
+  .br {
+    display: block;
+    font-size: 24px;
+    line-height: 100%; /* 24px */
+    padding-left: 16px;
+    text-align: start;
+  }
+}
