@@ -14,4 +14,15 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 142.6%; /* 19.964px */
+
+}
+
+@media (max-width: $frfrs) {
+  .redbox {
+    width: 84px;
+    height: auto;
+    min-height: 18px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
 }

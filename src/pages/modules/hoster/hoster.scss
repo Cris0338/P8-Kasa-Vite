@@ -1,0 +1,35 @@
+// hoster.scss
+
+@import "../../../style.scss";
+
+.hostBlock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    #host-name {
+      color: $primary;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 142.6%; /* 25.668px */
+      text-align: right;
+    }
+
+    #host-picture {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+  }
+
+  @media (max-width: $frfrroot) {
+    .hostBlock {
+      #host-name {
+        font-size: 12px;
+      }
+      #host-picture {
+        width: 32px;
+      height: 32px;
+      }
+    }
+  }

@@ -1,3 +1,5 @@
+// accordion.jsx
+
 import "./accordion.scss";
 import React, { useState } from "react";
 import arrow from '/arrow_24px.png';

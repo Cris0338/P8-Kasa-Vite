@@ -32,7 +32,6 @@
       width: 32px;
       height: 32px;
       cursor: pointer;
-      transition: transform 0.3s ease-in-out;
       transform: rotate(0deg);
     }
 
@@ -64,6 +63,11 @@
     .accordion-item {
       .accordion-title {
         height: 30px;
+      }
+      .accordion-content {
+        border-radius: 5px;
+        font-size: 12px;
+        line-height: 142.6%; /* 17.112px */
       }
     }
   }

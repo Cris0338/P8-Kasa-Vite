@@ -3,58 +3,80 @@
 @import "../../../style.scss";
 
 .carousel {
+  width: 100%;
+  max-width: 1240px;
+  height: 415px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.carousel-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel-controls button img {
+  width: 46.68px;
+  height: 79.2px;
+  
+}
+
+.carousel-controls span {
+  font-size: 16px;
+  color: $white-txt;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.carousel-counter {
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+}
+
+.carousel-counter span {
+  font-size: 18px;
+  font-weight: 500;
+  color: $white-txt;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+@media (max-width: $frfrs) {
+  .carousel-controls button img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+
+@media (max-width: $frfrroot) {
+  .carousel {
     width: 100%;
     max-width: 1240px;
-    height: 415px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
+    height: 225px;
   }
-  
-  .carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    padding: 0 24px;
-    box-sizing: border-box;
-  }
-  
-  .carousel-controls button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-  
   .carousel-controls button img {
-    width: 46.68px;
-    height: 79.2px;
+    width: 24px;
+    height: 24px;
   }
   
-  .carousel-controls span {
-    font-size: 16px;
-    color: $white-txt;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2px 8px;
-    border-radius: 5px;
-  }
-
-  .carousel-counter {
-    position: absolute;
-    width: 100%;
-    bottom: 25px;
-  }
-  
-  .carousel-counter span {
-    font-size: 18px;
-    font-weight: 500;
-    color: $white-txt;
-    padding: 2px 8px;
-    border-radius: 5px;
-  }
-  
+}
