@@ -1,5 +1,7 @@
 // rating.jsx
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar as fasFaStar, faStarHalfAlt, faStar as farFaStar } from '@fortawesome/free-solid-svg-icons';
 import './rating.scss';
 
 function Rating({ rating }) {
@@ -10,14 +12,16 @@ function Rating({ rating }) {
     return (
       <div className="rating">
         {[...Array(fullStars)].map((_, i) => (
-          <span key={`full-${i}`} className="star full">★</span>
+          <FontAwesomeIcon key={`full-${i}`} icon={fasFaStar} className="star full" />
         ))}
-        {hasHalfStar && <span className="star half">★</span>}
+        {hasHalfStar && (
+          <FontAwesomeIcon icon={faStarHalfAlt} className="star half" />
+        )}
         {[...Array(emptyStars)].map((_, i) => (
-          <span key={`empty-${i}`} className="star empty">☆</span>
+          <FontAwesomeIcon key={`empty-${i}`} icon={farFaStar} className="star empty" />
         ))}
       </div>
     );
-  }
-  
-  export default Rating;
+}
+
+export default Rating;

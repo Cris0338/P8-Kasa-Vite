@@ -3,24 +3,20 @@
 @import "../../../style.scss";
 
 .rating {
-    display: flex;
-  
-    .star {
-      font-size: 24px; // O la dimensione desiderata per le tue stelle
-  
-      &.full, &.half {
-        color: $filled-star; // Colore per stelle piene e mezze
-      }
-  
-      &.half::before {
-        content: '★';
-        color: $empty-star; // Colore di sfondo per la parte vuota della mezza stella, se necessario
-        position: absolute;
-      }
-  
-      &.empty {
-        color: $empty-star; // Colore per stelle vuote
-      }
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 24px;
+
+  .star {
+    &.full {
+      color: $filled-star;
+    }
+    &.half {
+      color: $filled-star;
+    }
+    &.empty {
+      color: $empty-star;
     }
   }
-  
+}
