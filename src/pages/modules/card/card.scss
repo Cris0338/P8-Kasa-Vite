@@ -54,14 +54,13 @@
 @media (max-width: $frfrxl) {
   .card {
     width: 100%;
-    min-width: 325px;
+    min-width: 300px;
   }
 }
 
 @media (max-width: $frfrs) {
   .card {
-    width: 100%;
-    min-width: 325px;
+
     height: 225px;
   }
 }
