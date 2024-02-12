@@ -15,14 +15,16 @@ function Accordion({ title, content }) {
 
   return (
     <div className="accordion-container">
+      {/* element qui contient les elements declencheur et declancee */}
       <div className={`accordion-item ${isActive ? "action" : ""}`}>
         <div className="accordion-title-bar">
           <h2>{title}</h2>
-          <div className="accordion-icon" onClick={handleClick}>
+          {/* element sur le quel si on clique on aura une action */}
+          <div className="accordion-icon" onClick={handleClick}> 
             <FontAwesomeIcon icon={faAngleUp} />
-            {/* <img src={arrow} alt="Toggle" /> */}
           </div>
         </div>
+        {/* element qui contient le contenu */}
         <div className={`accordion-content ${isActive ? "action" : ""}`}>{content}</div>
       </div>
     </div>
