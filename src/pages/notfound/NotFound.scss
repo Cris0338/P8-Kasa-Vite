@@ -27,6 +27,7 @@
 
   .line,
   .br {
+    width: 872px;
     color: $red-txt;
     font-size: 36px;
     font-weight: 500;
@@ -35,7 +36,6 @@
 
   .br {
     display: none;
-    
   }
 
   a {
@@ -76,8 +76,10 @@
         line-height: 142.6%; /* 136.896px */
       }
     }
-    
+
     .br {
+      width: 260px;
+      text-align: center;
       color: $red-txt;
       font-size: 18px;
       font-weight: 500;
