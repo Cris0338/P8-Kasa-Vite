@@ -4,7 +4,7 @@ import "./accordion.scss";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import arrow from '/arrow_24px.png';
+
 
 function Accordion({ title, content }) {
   const [isActive, setIsActive] = useState(false);
