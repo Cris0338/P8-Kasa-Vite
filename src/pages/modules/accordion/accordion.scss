@@ -31,13 +31,18 @@
     .accordion-icon {
       width: 32px;
       height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      
       cursor: pointer;
-      transform: rotate(0deg);
+      transition: transform 0.5s ease-out;
     }
 
     .accordion-content {
       max-height: 0;
-      transition: max-height 0.5s ease, padding 0.5s ease;
+      transition: max-height 0.5s ease-out, padding 0.5s ease;
       text-align: start;
       background: $bg-gallery;
       border-radius: 10px 10px 5px 5px;
@@ -63,7 +68,12 @@
     .accordion-item {
       .accordion-title {
         height: 30px;
+        font-size: 13px;
       }
+      .accordion-icon {
+        font-size: 13px;
+      }
+
       .accordion-content {
         border-radius: 5px;
         font-size: 12px;

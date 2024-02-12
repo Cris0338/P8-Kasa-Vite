@@ -2,6 +2,8 @@
 
 import "./accordion.scss";
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import arrow from '/arrow_24px.png';
 
 function Accordion({ title, content }) {
@@ -17,7 +19,8 @@ function Accordion({ title, content }) {
         <div className="accordion-title" onClick={handleClick}>
           <h2>{title}</h2>
           <div className="accordion-icon">
-            <img src={arrow} alt="Toggle" />
+            <FontAwesomeIcon icon={faAngleUp} />
+            {/* <img src={arrow} alt="Toggle" /> */}
           </div>
         </div>
         <div className={`accordion-content ${isActive ? "action" : ""}`}>{content}</div>
