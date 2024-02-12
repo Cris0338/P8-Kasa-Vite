@@ -36,9 +36,11 @@
   padding: 0;
 }
 
-.carousel-controls button img {
+.carousel-controls button {
+  color: $white-txt;
   width: 46.68px;
   height: 79.2px;
+  font-size: 72px;
 }
 
 .carousel-controls span {
@@ -64,9 +66,10 @@
 }
 
 @media (max-width: $frfrs) {
-  .carousel-controls button img {
+  .carousel-controls button {
     width: 48px;
     height: 48px;
+    font-size: 36px;
   }
 }
 
@@ -80,8 +83,13 @@
     object-fit: contain;
   }
 
-  .carousel-controls button img {
+  .carousel-controls button {    
     width: 24px;
     height: 24px;
+    font-size:18px;
+  }
+
+  .carousel-counter {
+    display: none;
   }
 }

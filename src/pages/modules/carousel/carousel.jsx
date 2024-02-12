@@ -2,8 +2,9 @@
 
 import React, { useState } from 'react';
 import './carousel.scss';
-import LArrow from '/LArrow.svg';
-import RArrow from '/RArrow.svg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Carousel({ pictures }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,10 +27,10 @@ function Carousel({ pictures }) {
         <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
         <div className="carousel-controls">
           <button onClick={goToPrevious} aria-label="Previous Image">
-            <img src={LArrow} alt="Left Arrow" />
+          <FontAwesomeIcon icon={faAngleLeft} />
           </button>
           <button onClick={goToNext} aria-label="Next Image">
-            <img src={RArrow} alt="Right Arrow" />
+          <FontAwesomeIcon icon={faAngleRight} />
           </button>
         </div>
         <div className="carousel-counter">
