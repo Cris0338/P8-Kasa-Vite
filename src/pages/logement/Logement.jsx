@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "../../pages/modules/carousel/carousel";
 import Accordion from "../../pages/modules/accordion/accordion";
+import NotFoundPage from "../notfound/NotFound";
 import RedBox from "../../pages/modules/redbox/redbox";
 import Hoster from "../../pages/modules/hoster/hoster";
 import Rating from "../../pages/modules/rating/rating";
@@ -26,7 +27,7 @@ function Logement() {
 
   // Controlla se l'alloggio è stato trovato
   if (!logement) {
-    return <div className="pasdelogement">Pas de logement trové !</div>;
+    return <NotFoundPage />;
   }
 
   return (
