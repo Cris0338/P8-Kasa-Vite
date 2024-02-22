@@ -1,11 +1,7 @@
-// Logement.jsx
-
-// Importa le dipendenze necessarie
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Carousel from "../../pages/modules/carousel/carousel";
 import Accordion from "../../pages/modules/accordion/accordion";
-import NotFoundPage from "../notfound/NotFound";
 import RedBox from "../../pages/modules/redbox/redbox";
 import Hoster from "../../pages/modules/hoster/hoster";
 import Rating from "../../pages/modules/rating/rating";
@@ -13,24 +9,24 @@ import data from "../../data/data.json";
 import "./Logement.scss";
 
 function Logement() {
-  // Ottieni l'ID dall'URL
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Stato per memorizzare i dettagli dell'alloggio
   const [logement, setLogement] = useState(null);
 
-  // Effettua la ricerca dell'alloggio corrispondente all'ID
   useEffect(() => {
     const found = data.find((item) => item.id === id);
-    if (!logement) {
-      return navigate("/logement-non-trouve")
+    if (!found) {
+      navigate("/logement-non-trouve");
+    } else {
+      setLogement(found);
     }
-    setLogement(found);
-  }, [id]);
+  }, [id, navigate]);
 
+  if (!logement) {
 
-  
+    return <div>Chargement en cours...</div>;
+  }
 
   return (
     <div className="logement">
@@ -48,7 +44,7 @@ function Logement() {
 
         <div className="logement-secondColumn">
           <div className="logement-hostBlock">
-          <Hoster name={logement.host.name} picture={logement.host.picture} />
+            <Hoster name={logement.host.name} picture={logement.host.picture} />
           </div>
           <div className="logement-ratingBlock">
             <Rating rating={parseFloat(logement.rating)} />
