@@ -15,6 +15,7 @@ import "./Logement.scss";
 function Logement() {
   // Ottieni l'ID dall'URL
   const { id } = useParams();
+  const navigate = useNavigate();
 
   // Stato per memorizzare i dettagli dell'alloggio
   const [logement, setLogement] = useState(null);
@@ -22,13 +23,14 @@ function Logement() {
   // Effettua la ricerca dell'alloggio corrispondente all'ID
   useEffect(() => {
     const found = data.find((item) => item.id === id);
+    if (!logement) {
+      return navigate("/logement-non-trouve")
+    }
     setLogement(found);
   }, [id]);
 
-  // Controlla se l'alloggio è stato trovato
-  if (!logement) {
-    return <NotFoundPage />;
-  }
+
+  
 
   return (
     <div className="logement">
